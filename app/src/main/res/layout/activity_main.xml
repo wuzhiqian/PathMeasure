@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wzq.pathmeasure.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.wzq.pathmeasure.CircleFlight
+                android:id="@+id/flight1"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/flight1"
+                android:background="@color/colorPrimary"/>
+
+            <com.wzq.pathmeasure.CircleFlight2
+                android:layout_below="@id/view"
+                android:id="@+id/flight2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp" />
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/flight2"
+                android:background="@color/colorPrimary"/>
+
+            <com.wzq.pathmeasure.CircleFlight3
+                android:layout_below="@id/view1"
+                android:id="@+id/flight3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
